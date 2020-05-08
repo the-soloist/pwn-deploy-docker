@@ -37,4 +37,4 @@ cd DeployPwnChroot/
 
 可选：peda、gef
 
-![image-20200508235540171](img/image-20200508235540171.png)
+![image-20200508235820611](img/image-20200508235820611.png)
