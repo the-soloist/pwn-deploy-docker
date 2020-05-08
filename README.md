@@ -36,3 +36,5 @@ cd DeployPwnChroot/
 默认：`Python3 + Pwngdb + pwndbg`
 
 可选：peda、gef
+
+![image-20200508235540171](img/image-20200508235540171.png)
