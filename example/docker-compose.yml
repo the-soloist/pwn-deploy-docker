@@ -1,0 +1,50 @@
+version: '2'
+services:
+  pwn_deploy_pwn_16:
+    image: pwn_deploy_pwn_16:latest
+    build:
+      context: .
+      dockerfile: pwn-pwn_16.Dockerfile
+    container_name: pwn_deploy_pwn_16
+    ports:
+    - 10000:10000
+
+    volumes:
+      - ./bin:/root/work
+      
+  pwn_deploy_pwn_18:
+    image: pwn_deploy_pwn_18:latest
+    build:
+      context: .
+      dockerfile: pwn-pwn_18.Dockerfile
+    container_name: pwn_deploy_pwn_18
+    ports:
+    - 10001:10001
+
+    volumes:
+      - ./bin:/root/work
+      
+  pwn_deploy_pwn_19:
+    image: pwn_deploy_pwn_19:latest
+    build:
+      context: .
+      dockerfile: pwn-pwn_19.Dockerfile
+    container_name: pwn_deploy_pwn_19
+    ports:
+    - 10002:10002
+
+    volumes:
+      - ./bin:/root/work
+
+  pwn_deploy_pwn_20:
+    image: pwn_deploy_pwn_20:latest
+    build:
+      context: .
+      dockerfile: pwn-pwn_20.Dockerfile
+    container_name: pwn_deploy_pwn_20
+    ports:
+    - 10003:10003
+
+    volumes:
+      - ./bin:/root/work
+      

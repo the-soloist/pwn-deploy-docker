@@ -1,0 +1,13 @@
+source ~/Pwn/GdbPlugins/.gdbinit-gef.py
+source ~/Pwn/GdbPlugins/Pwngdb/pwngdb.py
+source ~/Pwn/GdbPlugins/Pwngdb/angelheap/gdbinit.py
+
+define hook-run
+python
+import angelheap
+angelheap.init_angelheap()
+end
+end
+
+add-auto-load-safe-path /root/Pwn/GdbPlugins/Pwngdb/.gdbinit
+set auto-load safe-path /
